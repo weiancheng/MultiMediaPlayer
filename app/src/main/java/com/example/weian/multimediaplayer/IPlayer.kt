@@ -6,5 +6,12 @@ package com.example.weian.multimediaplayer
  * Created by weian on 2017/8/27.
  */
 
-abstract class IPlayer {
+interface IPlayer {
+    fun play(uri: String)
+    fun stop()
+    fun pause()
+    fun resume()
+    fun isPlaying()
+    fun current()
+    fun duration()
 }
